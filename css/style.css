@@ -1,0 +1,327 @@
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+         :root {
+            --text-color: #1E1E1E;
+            --text-color2: #2A2A2A;
+            --text-color3: #444040;
+            --btnHoverColor: #F5F5F5;
+            --sliderBtnColor: #03C974;
+            --blue: #20118E;
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            background-color: var(--btnHoverColor);
+        }
+        
+        body::-webkit-scrollbar {
+            width: 11px;
+        }
+        
+        body {
+            scrollbar-width: thin;
+            scrollbar-color: #fff;
+        }
+        
+        body::-webkit-scrollbar-track {
+            background: #ffff;
+        }
+        
+        body::-webkit-scrollbar-thumb {
+            background-color: var(--blue);
+            border-radius: 6px;
+            border: 3px solid #ffff;
+        }
+        
+        header nav {
+            z-index: 100;
+        }
+        
+        nav ul li a {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            color: var(--text-color);
+        }
+        
+        nav .lg button {
+            background-color: #ffff;
+            color: var(--text-color2);
+            padding: 3px;
+            border: 1px solid var(--text-color2);
+            border-radius: 5px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            transition: all .3s ease;
+        }
+        
+        nav .lg button:nth-child(2) {
+            margin: 0 10px;
+        }
+        
+        nav .lg button:hover {
+            background-color: var(--text-color2);
+            color: var(--btnHoverColor);
+        }
+        
+        nav .lg button.active {
+            background-color: var(--text-color2);
+            color: var(--btnHoverColor);
+        }
+        /*carousel*/
+        
+        .relative {
+            width: 100%;
+            height: 100vh;
+            background-image: url(/img/bg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: #ffff;
+            position: relative;
+            z-index: 1;
+            padding-top: 25px;
+        }
+        
+        #controls-carousel .head-text-img {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 0 55px;
+        }
+        
+        #controls-carousel .sliderBtn {
+            color: var(--sliderBtnColor);
+            font-size: 35px;
+        }
+        
+        .head-text-img h2 {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 72px;
+            color: var(--text-color);
+        }
+        
+        .head-text-img h2 span {
+            font-weight: 500;
+        }
+        
+        .head-text-img p {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            color: var(--text-color2);
+        }
+        
+        #controls-carousel .item-about h3 {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            color: var(--text-color);
+        }
+        
+        #controls-carousel .item-about {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 15px;
+            padding: 0 10px;
+        }
+        
+        #controls-carousel .item-about .item-container {
+            width: 1000px;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            /* From https://css.glass */
+            background: rgba(255, 255, 255, 0.416);
+            border-radius: 15px;
+            padding: 8px;
+        }
+        
+        #controls-carousel .item-about h3 span {
+            font-weight: 600;
+        }
+        
+        #controls-carousel .item-about button {
+            width: 183px;
+            height: 42px;
+            background: var(--sliderBtnColor);
+            border-radius: 12px;
+            color: var(--text-color);
+            transition: all .3s ease;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+        }
+        
+        #controls-carousel .item-about button:hover {
+            background: var(--btnHoverColor);
+        }
+        
+        #preparations {
+            padding-top: 40px;
+        }
+        
+        #preparations .head {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 36px;
+            color: var(--text-color);
+            text-align: center;
+        }
+        
+        .slide-container {
+            max-width: 1120px;
+            width: 100%;
+            padding: 40px 0;
+        }
+        
+        .slide-content {
+            margin: 0 40px;
+            overflow: hidden;
+            border-radius: 25px;
+        }
+        
+        .image-content,
+        .card-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 14px;
+        }
+        
+        .image-content {
+            position: relative;
+            row-gap: 5px;
+            padding: 25px 0;
+        }
+        
+        .overlay {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background-color: #4070F4;
+            border-radius: 25px 25px 0 25px;
+        }
+        
+        .overlay::before,
+        .overlay::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: -40px;
+            height: 40px;
+            width: 40px;
+            background-color: #4070F4;
+        }
+        
+        .overlay::after {
+            border-radius: 0 25px 0 0;
+            background-color: #FFF;
+        }
+        
+        .card-image {
+            position: relative;
+            width: 256px;
+            height: 320px;
+            border-radius: 50%;
+            padding: 3px;
+        }
+        
+        .card-image .card-img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        
+        .name {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            letter-spacing: 0.1em;
+            color: var(--text-color3);
+        }
+        
+        .description {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 27px;
+            color: var(--text-color3);
+        }
+        
+        .button:hover {
+            background: #265DF2;
+        }
+        
+        .swiper-navBtn {
+            color: #6E93f7;
+            transition: color 0.3s ease;
+        }
+        
+        .swiper-navBtn:hover {
+            color: #4070F4;
+        }
+        
+        .swiper-navBtn::before,
+        .swiper-navBtn::after {
+            font-size: 35px;
+        }
+        
+        .swiper-button-next {
+            right: 0;
+        }
+        
+        .swiper-button-prev {
+            left: 0;
+        }
+        
+        .swiper-pagination-bullet {
+            background-color: #6E93f7;
+            opacity: 1;
+        }
+        
+        .swiper-pagination-bullet-active {
+            background-color: #4070F4;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .slide-content {
+                margin: 0 10px;
+            }
+            .swiper-navBtn {
+                display: none;
+            }
+        }
+        
+        @media (max-width: 1049px) {
+            .relative {
+                width: 100%;
+                height: 1000px;
+            }
+        }
