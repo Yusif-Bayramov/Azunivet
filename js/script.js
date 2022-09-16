@@ -14,6 +14,7 @@ $(document).ready(function() {
         autoplaySpeed: 1500,
         arrows: true,
         dots: false,
+        loop: true,
         pauseOnHover: true,
         prevArrow: '<i class="slick-prev fas fa-angle-left"></i>',
         nextArrow: '<i class="slick-next fas fa-angle-right"></i>',
