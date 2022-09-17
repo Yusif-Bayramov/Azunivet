@@ -319,12 +319,12 @@
         }
         
         .swiper-pagination-bullet {
-            background-color: #6E93f7;
+            background-color: #03c97374;
             opacity: 1;
         }
         
         .swiper-pagination-bullet-active {
-            background-color: #4070F4;
+            background-color: #03C974;
         }
         /*about*/
         
