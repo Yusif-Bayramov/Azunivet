@@ -5,8 +5,3 @@ lg.forEach(element => {
         this.classList.add("active")
     });
 });
-
-function btnC() {
-    const svgColor = document.querySelector(".imgH");
-    svgColor.classList.toggle("active")
-}
