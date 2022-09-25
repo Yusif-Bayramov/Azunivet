@@ -2023,7 +2023,26 @@
             object-fit: cover;
         }
         
-        .p-card a {
+        .like-btn {
+            display: inline-block;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            color: var(--logoC);
+            padding-top: 15px;
+        }
+        
+        .like-btn i {
+            transition: var(--transitions);
+        }
+        
+        .like-btn:hover i {
+            font-weight: bold;
+        }
+        
+        .p-card .cart-btn {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -2157,5 +2176,14 @@
             }
             .p-card {
                 padding: 0 30px;
+            }
+        }
+        
+        @media (max-width: 964px) {
+            .like-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 2px;
             }
         }
